@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IMC-Calculator</title>
+</head>
+
+<body>
+    <!--background-->
+    <div class="container">
+        <!--structure-->
+        <div class="IMC">
+            <h1>Calculadora IMC</h1>
+            <!--input-field-->
+            <div class="input-field">
+                <label for="altura">Altura (ex.: 1,70)</label>
+                <input type="number" name="altura" id="altura" placeholder="Metros" maxlength="4">
+                <label for="peso">Peso (ex.: 65,2)</label>
+                <input type="number" name="peso" id="peso" placeholder="Quilos" maxlength="6">
+            </div>
+            <button id="botao" onclick="calcIMC()">Calcular</button>
+
+            <!--result-->
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <!--script-->
+    <script src="script.js"></script>
+</body>
+
+</html>
